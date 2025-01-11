@@ -23,7 +23,7 @@ clear
   ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⢀⣀⡿⠿⠿⠿⠿⠿⠿⢿⣀⣀⣀⣀⣀⡀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠸⠿⣇⣀⣀⣀⣀⣀⣀⣸⠿⢿⣿⣿⣿⡇⠀⠀Host a Minecraft Server using Android - With Termux
-⠀⠀⠀⠀⠀⠀⠀⠀⠻⠿⠿⠿⠿⠿⣿⣿⣀⡸⠿⢿⣿⡇⠀⠀ github.com/drmatoi/minecraft Version 2.0.0
+⠀⠀⠀⠀⠀⠀⠀⠀⠻⠿⠿⠿⠿⠿⣿⣿⣀⡸⠿⢿⣿⡇⠀⠀ github.com/Remkich/minecraft Version 2.0.0
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣤⣿⣿⣿⣧⣤⡼⠿⢧⣤⡀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣤⣿⣿⣿⣿⠛⢻⣿⡇⠀⢸⣿⡇
 ⠀⠀⠀⠀⠀⠀⠀⠀⣤⣤⣿⣿⣿⣿⠛⠛⠀⢸⣿⡇⠀⢸⣿⡇
@@ -60,7 +60,7 @@ echo " "
 
     read ch
    if [ $ch -eq 1 ];then
-        pkg install openjdk-17
+        pkg install openjdk-21
 
 pkg install wget
 
@@ -76,7 +76,7 @@ mkdir drmatoi_minecrafthost && drmatoi_minecrafthost
 
 cd drmatoi_minecrafthost
 
-wget -O server.jar https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar
+wget -O server.jar https://api.papermc.io/v2/projects/paper/versions/1.21.1/builds/132/downloads/paper-1.21.1-132.jar
 
 chmod +x server.jar
 
@@ -120,7 +120,7 @@ Now launch the Server with ./alwaysonline.sh This will check the up-time of the 
         exit
    elif [ $ch -eq 999 ];then
  rm -rf minecraft
-git clone https://github.com/drmatoi/minecraft
+git clone https://github.com/Remkich/minecraft
 cd minecraft
 chmod +x launcher.sh
 ./launcher.sh
