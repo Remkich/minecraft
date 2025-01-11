@@ -16,7 +16,7 @@ I'm already working on solving these problems. If you have any tips, feel free t
  Install and start the Launcher for the FIRST time
 Copy paste this into Termux
 * `pkg install git`
-* `git clone https://github.com/drmatoi/minecraft`
+* `git clone https://github.com/Remkich/minecraft`
 * `cd minecraft`
 * `chmod +x launcher.sh`
 * `./launcher.sh`
@@ -41,8 +41,8 @@ LAST TEST: 31.09.2024, Termux, Android 14 NOTHING OS, Nothing Phone (2a)
 * `passwd`
 
 * `cd ~/`
-* ` mkdir drmatoi_minecrafthost && drmatoi_minecrafthost `
-* ` cd drmatoi_minecrafthost `
+* ` mkdir remkich_minecrafthost && drmatoi_minecrafthost `
+* ` cd remkich_minecrafthost `
 
 * ` wget -O server.jar https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar `
 * ` chmod +x server.jar `
@@ -73,26 +73,11 @@ LAST TEST: 31.09.2024, Termux, Android 14 NOTHING OS, Nothing Phone (2a)
 * ![photo_2024-08-31_16-09-37](https://github.com/user-attachments/assets/ab576a91-5a78-4993-a7ff-1521bc0015f3)
 
 
-
- 
-
-* ## Change MC Versions [ Before and after 1. Server Setup]
-* You can use any Minecraft version before 1.17 ! ( Standart is Java 1.15.2)
-* This is because OpenJDK 17 is used here. Newer versions of OpenJDK can also be used to host newer versions of Minecraft.
-* Use other Minecraft Versions like PaperMC? Yes it works BUT it can impact the server performance!
-* How to change the Version? Easy! Look at
-* * ` wget -O server.jar https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar `
-  * and replace * ` https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar `
-  * with the version you like! WARNING! If the .jar is not named server.jar you have to rename it!
-  * This is how the download looks like:
-  * ![photo_1_2024-08-31_15-20-27](https://github.com/user-attachments/assets/dd1a610a-4454-4c12-b3e8-5e15f072482b)
-
-
    *  ## Configure the server [After 1. Server Setup]
 * You can conig server with the command ` nano thefileyouwanttoedit.fileending ` to save the file [STRG + X]
 * EASY WAY - You can config the Server via. FTP Client.
 * `Server : sftp://192.292.212.22 (YOUR IP ADRESS) `
-* `Username:  does not matter- example: drmatoi `
+* `Username:  does not matter- example: remkich`
 * `password: Password you set while launching the Server) `
 * ![-2147483648_-210244](https://github.com/user-attachments/assets/be017e47-9f73-4e49-9ca7-f94ba65f4426)
 
@@ -122,7 +107,7 @@ All other new Minecraft logs will be displayed below.
 ## Need to Update/Reset the Launcher.
 type
 * `rm -rf minecraft`
-* `git clone https://github.com/drmatoi/minecraft`
+* `git clone https://github.com/Remkich/minecraft`
 * `cd minecraft`
 * `chmod +x launcher.sh`
 * `./launcher.sh`
