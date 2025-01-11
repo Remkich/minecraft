@@ -5,7 +5,9 @@ A script for Termux that makes it possible to host a Minecraft server via your A
 This script requires Termux (Updated F-Droid Version) and a bit of time :) <br>
 
 <br>
-<u> YOU CAN NOT USE THIS ON ANDROID 11 - SORRY!</u> <br>
+<u> YOU CAN NOT USE THIS ON ANDROID 11 - SORRY!
+
+not for long btw, i'm fixing it</u> <br>
 
 # KNOWN ISSUES
 * When you query the IP address in the launcher, the necessary package is downloaded but the IP address is not displayed. <br>
